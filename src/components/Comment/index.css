@@ -1,0 +1,43 @@
+.comment {
+    background-color: lightblue;
+    max-width: 80%;
+    word-wrap: normal;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
+.comment > p{
+    padding: 0px 10px;
+    
+}
+
+.comment-header{
+    display:inline-flex;
+    align-items: baseline;
+    word-wrap: break-word;
+}
+
+.comment-header > h4, span{
+    margin: 5px 10px;
+    color: gray;
+}
+
+.comment-title{
+    margin-right: 10px;
+}
+
+@media (max-width: 1020px) {
+    .comment-header{
+        flex-direction: column;
+    }
+
+    .comment-header > h4,span {
+        width: 80%;
+    }
+    
+    .comment {
+        max-width: 100%;
+    }
+    
+}
