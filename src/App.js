@@ -8,9 +8,9 @@ const App = () => {
     return(
         <BrowserRouter >
             <Switch>
-                <Route path='/' exact component={Home} />
-                <Route path='/posts' component={Posts} />
-                <Route path='/404' component={MissingPage} />
+                <Route path='/posts-challenge/' exact component={Home} />
+                <Route path='/posts-challenge/posts' component={Posts} />
+                <Route path='/posts-challenge/404' component={MissingPage} />
                 <Redirect from='*' to='/404' />
             </Switch>
         </BrowserRouter>
